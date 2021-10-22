@@ -17,6 +17,8 @@ export class Guerrier{
         for ( let i = 1; i <= 4; i++) {
             this.rage = this.rage +1;
         };
-        this.attaque = this.attaque + 12;
+        if (this.rage == 4) {
+            this.attaque = this.attaque + 12;
+        };
     };
 };

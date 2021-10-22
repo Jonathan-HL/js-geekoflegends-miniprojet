@@ -18,7 +18,7 @@ export class Sauron extends Boss{
         let reponse = ["le feu","le silence","une fenetre","a","la voix"];
         if (this.vie <= 200) {
             alert(choice1);
-        }
+        };
         let maReponse = prompt("met ta reponse")
         if (random1 == 0 && maReponse == reponse[0]) {
                     alert("Sauron est mort")
@@ -32,11 +32,10 @@ export class Sauron extends Boss{
                     alert("Sauron est mort")
                 }
                 else{
-                    console.log("tu es mort")
-                }
+                    alert("tu es mort")
+                };
     };
 };
-let Boss1 = new Sauron("Sauron",1000,10);
 // ------------------------------------------------------------------------
 // Chronos
 export class Chronos extends Boss{
@@ -65,10 +64,9 @@ export class Chronos extends Boss{
                 }
                 else{
                     alert("tu es mort")
-                }
+                };
     };
 };
-let Boss2 = new Chronos("Chronos",1300,20);
 // ------------------------------------------------------------------------
 // Lilith
 export class Lilith extends Boss{
@@ -97,8 +95,7 @@ export class Lilith extends Boss{
                 }
                 else{
                     alert("tu es mort")
-                }
+                };
     };
 };
-let Boss3 = new Lilith("Lilith",1500,35);
 // ------------------------------------------------------------------------
