@@ -5,13 +5,15 @@ export class Mage {
         this.attaque = attaque;
         this.mana = [];
     };
-    defense() {
+    postureDefense() {
         this.attaque = this.attaque / 2;
         this.vie = this.vie * 2.5;
+        console.log(`${this.nom} boost ses points de vie en échange de ses degas.`);
     };
-    attaques () {
+    postureAttaques() {
         this.attaque = this.attaque * 1.4;
         this.vie = this.vie -25;
+        console.log(`${this.nom} boost ses points de degas en échange de ses points de vie.`);
     };
     manaReserve (){
         let mana = [7,9,11];
@@ -36,6 +38,6 @@ export class Mage {
         if (this.attaque == 148) {
             this.mana += 7;
         };
-        console.log(`j'ai récupéré : ${this.mana} de mana mais en échange j'ai perdu 2 d'attaque.`);
+        console.log(`j'ai récupéré : ${this.mana} de mana mais en échange de -2 d'attaque j'ai actuellement : ${this.attaque} de dega.`);
     };
 };

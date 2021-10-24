@@ -11,13 +11,15 @@ export class Archer {
         this.fleches = changeFleche;
         return changeFleche;     
     };
-    defense() {
+    postureDefense() {
         this.attaque = this.attaque / 2;
         this.vie = this.vie * 2.5;
+        console.log(`${this.nom} boost ses points de vie en échange de ses degas.`);
     };
-    attaques () {
+    postureAttaques() {
         this.attaque = this.attaque * 1.4;
         this.vie = this.vie - 30;
+        console.log(`${this.nom} boost ses points de degas en échange de ses points de vie.`);
     };
     perdFleches(){
         for (let i = 0; 0 < this.fleches ;i--) {
